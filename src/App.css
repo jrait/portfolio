@@ -1,10 +1,89 @@
 .App {
   text-align: center;
+
+  margin: 0px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li{
+  list-style-type: none;
+}
+#navLogo{
+  height:50px;
+}
+.nav{
+  background-color:#d972ff;
+  color:white;
+  align-items:center;
+  padding: 10px;
+  position:fixed;
+  vertical-align: top;
+  width:100%;
+}
+.nav li{
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.nav li a{
+  color: #ffffe8;
+}
+.nav a{
+  color: #ffffe8;
+}
+.header {
+  background-image: url('./images/robot_efficiency.jpeg'),linear-gradient(#d972ff,#8447ff);
+  background-repeat:no-repeat,no-repeat;
+  background-size:cover,cover;
+  background-blend-mode:lighten;
+  padding-top:100px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffe8;
+}
+.about{
+  border: 1px solid #8CFFDA;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px;
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.projects{
+  justify-content: space-around;
+  padding: 20px;
+}
+.projectBox{
+  border: 1px solid #8CFFDA;
+  box-shadow: 2px 2px 2px;
+  padding: 30px;
+}
+.projectBox p{
+  margin: 20px 0px;
+}
+
+.proj-img{
+  max-height:200px;
+  max-width: 90%;
+}
+
+.tech{
+  margin: 10px 10px;
+}
+
+.contact{
+  background-color: #8447ff;
+  color: white;
+  padding: 15px;
+  padding-bottom:40px;
+}
+.contactInfo li{
+  margin: 0px 10px;
+}
+.contactInfo li a{
+  color: #FFB2E6;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,27 +91,28 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.bubble{
+  position:absolute;
+  height:2px;
+  width:2px;
+  color:hotpink;
+  /* animation: particle 30s infinite linear; */
+}
+
+@keyframes particle {
+  from{
+    transform:translate(20px,40px)
+  }
+  to{
+    transform: translate(60px,100px)
   }
 }
